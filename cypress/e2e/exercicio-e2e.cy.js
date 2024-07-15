@@ -25,7 +25,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('.woocommerce-form > .button').click()
 });
 
-it.only('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
+it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
     cy.visit('produtos')
     let qtd = 4
     produtosPage.buscarProduto('Apollo Running Short')
